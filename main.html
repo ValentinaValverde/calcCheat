@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="header">
+            <input id="calcScreen" type="text" name="display">
+        </div>
+        <div>
+            <input type="button" class="button top AC" value="AC" onclick="display.value = ''">
+            <input type="button" class="button top DE" value="DE"
+                onclick="display.value = display.value.toString().slice(0, -1)">
+            <input type="button" class="button top dot" value="." onclick="display.value += '.'">
+            <input type="button" class="button op slash" value="/" onclick="display.value += '/'">
+        </div>
+        <div>
+            <input type="button" class="button num seven" value="7" onclick="display.value += '7'">
+            <input type="button" class="button num eight" value="8" onclick="display.value += '8'">
+            <input type="button" class="button num nine" value="9" onclick="display.value += '9'">
+            <input type="button" class="button op mult" value="*" onclick="display.value += '*'">
+        </div>
+        <div>
+            <input type="button" class="button num four" value="4" onclick="display.value += '4'">
+            <input type="button" class="button num five" value="5" onclick="display.value += '5'">
+            <input type="button" class="button num six" value="6" onclick="display.value += '6'">
+            <input type="button" class="button op minus" value="-" onclick="display.value += '-'">
+        </div>
+        <div>
+            <input type="button" class="button num one" value="1" onclick="display.value += '1'">
+            <input type="button" class="button num two" value="2" onclick="display.value += '2'">
+            <input type="button" class="button num three" value="3" onclick="display.value += '3'">
+            <input type="button" class="button op plus" value="+" onclick="display.value += '+'">
+        </div>
+        <div>
+            <input type="button" class="button num doubleZero" value="00" onclick="display.value += '00'">
+            <input type="button" class="button num zero" value="0" onclick="display.value += '0'">
+            <input type="button" class="button op equal" value="=">
+        </div>
+    </div>
+
+</body>
+<script src="scripts/scripts.js"></script>
+
+</html>
